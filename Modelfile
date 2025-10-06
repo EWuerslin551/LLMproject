@@ -1,0 +1,11 @@
+FROM llama3.2:3b
+# could use "FROM tinyllama:latestSYSTEM" for a more optimized model
+#then did this in command terminal: curl -fsSL https://ollama.com/install.sh|sh
+#LottaWords        is the user model i made, could be anything
+#ollama serve        starts a server
+#pkill ollama        to stop server
+
+#ollama create LottaWords -f Modelfile
+#ollama run LottaWords
+#to end do /bye
+#ollama ps     gives current state of models if used in new terminal

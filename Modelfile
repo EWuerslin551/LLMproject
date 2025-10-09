@@ -1,5 +1,11 @@
-FROM llama3.2:3b
-# could use "FROM tinyllama:latestSYSTEM" for a more optimized model
+FROM Tinyllama:latest
+
+SYSTEM """
+"""
+#above gives the model base instructions on who they are, write like You are maria from super mario brothers teaching me calculus
+# could use "FROM Tinyllama:latest" for a more optimized model
+# or use Gemma3:1b for a better moddel
+# or Qwen2.5:1.5b for cited sources
 #then did this in command terminal: curl -fsSL https://ollama.com/install.sh|sh
 #LottaWords        is the user model i made, could be anything
 #ollama serve        starts a server
@@ -9,3 +15,4 @@ FROM llama3.2:3b
 #ollama run LottaWords
 #to end do /bye
 #ollama ps     gives current state of models if used in new terminal
+#to stop the model: ollama stop test-llm
